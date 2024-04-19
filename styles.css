@@ -1,0 +1,99 @@
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Center align content */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Style the search form */
+#form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #a09292;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.submitButton{
+  border-radius: 5px;
+  border: 1px solid #a09292;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+}
+
+/* Style the user card */
+.user-card {
+  display: flex;
+  background-color: #353232;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  max-width: 100%;
+}
+
+.avatar {
+  display: grid;
+  max-width: 50%;
+  height: 200px;
+  border-radius: 50%;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.userInfo{
+  text-align: start;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+  #search {
+    width: 100%;
+  }
+  .user-card {
+    width: 90%;
+  }
+}
+
+/* Center the user card on smaller screens */
+@media (max-width: 500px) {
+  body {
+    text-align: center;
+  }
+  .user-card {
+    margin: 0 auto;
+  }
+}
